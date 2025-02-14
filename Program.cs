@@ -10,7 +10,8 @@ namespace DSA_CSharp
         {
             //since the TestDynamicArray is not a staticMethod, we need to create an object and access instance method inside the Static methods
             Program p = new Program();
-            p.TestDynamicArray();
+            p.TestSinglyLinkedList();
+            //p.TestDynamicArray();
         }
 
 
@@ -34,6 +35,28 @@ namespace DSA_CSharp
             darray.RemoveAt(2);
 
             darray.PrintArray();
+        }
+
+        private void TestSinglyLinkedList()
+        {
+            Singly_LinkedList<int> sLs = new Singly_LinkedList<int>();
+            sLs.AddLast(10);
+            sLs.AddLast(20);
+            sLs.AddLast(30);
+            sLs.PrintList();
+
+            sLs.AddFirst(5);
+            sLs.PrintList();
+
+            sLs.AddAtIndex(15, 2);
+            sLs.PrintList();
+
+            sLs.RemoveFirst();
+            sLs.RemoveLast();
+            sLs.PrintList();
+
+            sLs.RemoveAtIndex(1);
+            sLs.PrintList();
         }
     }
 }
