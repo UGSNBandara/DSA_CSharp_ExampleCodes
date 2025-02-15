@@ -166,6 +166,48 @@ namespace DSA_CSharp
                 Console.WriteLine();
             }
         }
+
+        public void RemoveByValue(T data)
+        {
+            if(head == null)
+            {
+                Console.WriteLine("List is Empty");
+            }
+            else
+            {
+                // Beacuae we can not use == operator for T type
+                if(head.Data.Equals(data))
+                {
+                    while(head != null && head.Data.Equals(data))
+                    {
+                        head= head.Next;
+                    }
+
+                }
+                else
+                {
+                    Node current = head;
+                    while (current.Next != null)
+                    {
+                        if (current.Next.Next == null && current.Next.Data.Equals(data))
+                        {
+                            current.Next = null;
+                            return;
+                        }
+                        else if (current.Next.Data.Equals(data))
+                        {
+                            current.Next = current.Next.Next;
+                            Count--;
+                        }
+                        else
+                        {
+                            current = current.Next;
+                        }
+                    }
+                }
+            }
+
+        }
         
     }
 }

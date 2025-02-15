@@ -42,7 +42,11 @@ namespace DSA_CSharp
             Singly_LinkedList<int> sLs = new Singly_LinkedList<int>();
             sLs.AddLast(10);
             sLs.AddLast(20);
+            sLs.AddFirst(30);
+            sLs.AddFirst(40);
             sLs.AddLast(30);
+            sLs.AddLast(40);
+            sLs.AddLast(50);
             sLs.PrintList();
 
             sLs.AddFirst(5);
@@ -56,6 +60,9 @@ namespace DSA_CSharp
             sLs.PrintList();
 
             sLs.RemoveAtIndex(1);
+            sLs.PrintList();
+
+            sLs.RemoveByValue(30);
             sLs.PrintList();
         }
     }
