@@ -12,7 +12,8 @@ namespace DSA_CSharp
             Program p = new Program();
             //p.TestSinglyLinkedList();
             //p.TestDynamicArray();
-            p.TestDoubleyLinedList();
+            //p.TestDoubleyLinedList();
+            p.TestArrayStack();
         }
 
 
@@ -96,6 +97,33 @@ namespace DSA_CSharp
             dbLs.RemoveAtIndex(2);
             dbLs.PrintListForward();
 
+        }
+
+        private void TestArrayStack()
+        {
+            StackUsingArray<int> stack = new StackUsingArray<int>(10);
+            stack.Push(45);
+            stack.Push(55);
+            stack.Push(65);
+            stack.Push(75);
+            stack.Push(85);
+            stack.Push(95);
+            stack.Push(105);
+            stack.Push(115);
+            stack.Push(125);
+
+            stack.PrintStack();
+
+            stack.pop();
+            stack.pop();
+
+            stack.Push(135);
+            stack.Peek();
+
+            stack.Push(145);
+            stack.Peek();
+
+            stack.PrintStack();
         }
     }
 }
