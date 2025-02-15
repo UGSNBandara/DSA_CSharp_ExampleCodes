@@ -13,7 +13,8 @@ namespace DSA_CSharp
             //p.TestSinglyLinkedList();
             //p.TestDynamicArray();
             //p.TestDoubleyLinedList();
-            p.TestArrayStack();
+            //p.TestArrayStack();
+            p.TestLinkedListStack();
         }
 
 
@@ -124,6 +125,34 @@ namespace DSA_CSharp
             stack.Peek();
 
             stack.PrintStack();
+        }
+
+        private void TestLinkedListStack()
+        {
+            //This is a Dynamic Stack, so the size is not fixed
+            StackUsingLinkedList<int> stack = new StackUsingLinkedList<int>();
+            stack.Push(45);
+            stack.Push(55);
+            stack.Push(65);
+            stack.Push(75);
+            stack.Push(85);
+            stack.Push(95);
+            stack.Push(105);
+            stack.Push(115);
+            stack.Push(125);
+
+            stack.PrintStack();
+
+            stack.Pop();
+
+            stack.Push(135);
+            stack.Peek();
+
+            stack.Push(145);
+            stack.Peek();
+
+            stack.PrintStack();
+
         }
     }
 }
