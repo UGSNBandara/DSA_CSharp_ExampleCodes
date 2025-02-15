@@ -14,7 +14,8 @@ namespace DSA_CSharp
             //p.TestDynamicArray();
             //p.TestDoubleyLinedList();
             //p.TestArrayStack();
-            p.TestLinkedListStack();
+            //p.TestLinkedListStack();
+            p.TestLinkedListArray_Graph();
         }
 
 
@@ -153,6 +154,22 @@ namespace DSA_CSharp
 
             stack.PrintStack();
 
+        }
+
+        private void TestLinkedListArray_Graph()
+        {
+            GraphWightedAndDirected graph = new GraphWightedAndDirected(5);
+
+            graph.AddNewEdge(0, 1, 10);
+            graph.AddNewEdge(0, 4, 20);
+            graph.AddNewEdge(1, 2, 30);
+            graph.AddNewEdge(1, 3, 40);
+            graph.AddNewEdge(1, 4, 50);
+            graph.AddNewEdge(2, 3, 60);
+            graph.AddNewEdge(3, 4, 70);
+            graph.AddNewEdge(4, 0, 80);
+
+            graph.PrintGraph();
         }
     }
 }
