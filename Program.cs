@@ -15,7 +15,8 @@ namespace DSA_CSharp
             //p.TestDoubleyLinedList();
             //p.TestArrayStack();
             //p.TestLinkedListStack();
-            p.TestLinkedListArray_Graph();
+            //p.TestLinkedListArray_Graph();
+            p.TestBST();
         }
 
 
@@ -170,6 +171,25 @@ namespace DSA_CSharp
             graph.AddNewEdge(4, 0, 80);
 
             graph.PrintGraph();
+        }
+
+        private void TestBST()
+        {
+            BST bst = new BST();
+
+            bst.Insert(10);
+            bst.Insert(20);
+            bst.Insert(5);
+            bst.Insert(15);
+            bst.Insert(30);
+            bst.Insert(25);
+            bst.Insert(35);
+            bst.Insert(40);
+            bst.Insert(45);
+            bst.Insert(50);
+
+            bst.Print();
+
         }
     }
 }
