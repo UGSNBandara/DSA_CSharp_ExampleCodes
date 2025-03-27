@@ -5,7 +5,9 @@ VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DSA_CSharp", "DSA_CSharp.csproj", "{0B8F6CA1-8824-43DE-8BCF-CA5FFF2A5064}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphsAlgorithm", "..\GraphsAlgorithm\GraphsAlgorithm.csproj", "{EC091D20-277B-4EC7-ABE0-5FE759D0412D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GraphsAlgorithm", "..\GraphsAlgorithm\GraphsAlgorithm.csproj", "{EC091D20-277B-4EC7-ABE0-5FE759D0412D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tress", "..\Tress\Tress.csproj", "{791146E8-2473-4914-AABF-26AF4203A8BD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{EC091D20-277B-4EC7-ABE0-5FE759D0412D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EC091D20-277B-4EC7-ABE0-5FE759D0412D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EC091D20-277B-4EC7-ABE0-5FE759D0412D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{791146E8-2473-4914-AABF-26AF4203A8BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{791146E8-2473-4914-AABF-26AF4203A8BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{791146E8-2473-4914-AABF-26AF4203A8BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{791146E8-2473-4914-AABF-26AF4203A8BD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
